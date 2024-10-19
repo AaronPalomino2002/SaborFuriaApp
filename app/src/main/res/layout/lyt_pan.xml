@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/firstVerticalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/tipPanPe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#E2CA72">
+
+        <TextView
+            android:id="@+id/leftText"
+            android:background="#E2CA72"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Tipo de pan?:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Obligatorio"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_text_border"/>
+    </LinearLayout>
+    </LinearLayout>
+
+    <View
+    android:id="@+id/view4"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/black"
+    app:layout_constraintTop_toBottomOf="@+id/firstVerticalLayout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcListaPan"
+        android:layout_width="412dp"
+        android:layout_height="363dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+    android:id="@+id/btnSiguiente"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#F65600"
+    android:text="Confirmar"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/rcListaPan" />
+</androidx.constraintlayout.widget.ConstraintLayout>

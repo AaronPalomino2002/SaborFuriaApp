@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SaborFuria"
+        tools:targetApi="31">
+
+
+        <activity
+            android:name=".ActCarga"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActPrincipal" />
+        <activity android:name=".activity.ActLogin" />
+        <activity android:name=".activity.ActRegistrar" />
+        <activity android:name=".activity.ActInicio" />
+        <activity android:name=".activity.ActCarroCompra" />
+        <activity android:name=".activity.ActLoginAdmin" />
+        <activity android:name=".ActInicioAdmi" />
+        <activity android:name=".activity.ActBoleta"/>
+        <activity android:name="com.example.saborfuria.ActFinalizarCompra" />
+        <activity android:name=".ActPerfilAdmin"/>
+        <activity android:name=".ActDesarrolladores"/>
+        <activity android:name=".activity.ActListarClientes"/>
+        <activity android:name=".activity.ActRegistrarProductos"/>
+        <activity android:name=".activity.ActListarProductos"/>
+        <activity android:name=".activity.ActRegistrarMenu"/>
+        <activity android:name=".activity.ActListarMenu"/>
+        <activity android:name=".ActPerfilUsuario"/>
+        <activity android:name=".activity.ActListarBoletas"/>
+        <activity android:name=".activity.ActRegistrarBoleta"/>
+        <activity android:name=".activity.ActListarReservas"/>
+        <activity android:name=".personalizar.ActPan"/>
+        <activity android:name=".personalizar.ActHamburguesas"/>
+        <activity android:name=".personalizar.ActVegetales"/>
+        <activity android:name=".personalizar.ActSalsas"/>
+        <activity android:name=".personalizar.ActExtras"/>
+        <activity android:name=".activity.ActRegistrarCliente"/>
+    </application>
+
+</manifest>

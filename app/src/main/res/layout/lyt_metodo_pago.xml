@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009C3232">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="373dp"
+        android:layout_height="678dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/style_borde"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/style_checkout"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="CHECKOUT"
+            android:textColor="#E2CA72"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20sp"
+            android:paddingTop="10sp"
+            android:paddingRight="10sp"
+            android:text="Al registrar el pidido autoriza el tratamiento de sus datos personales"
+            android:textColor="#5E5A5A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="20sp"
+            android:paddingTop="20sp"
+            android:paddingRight="10sp"
+            android:text="Dirección donde enviaremos tu pedido"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtDirec"
+            android:layout_width="322dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/style_borde"
+            android:ems="20"
+            android:hint="Ingrese su Dirección"
+            android:inputType="text"
+            android:paddingLeft="20sp"
+            android:singleLine="false"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20sp"
+            android:paddingTop="30sp"
+            android:paddingRight="30sp">
+
+            <EditText
+                android:id="@+id/edtNomRes"
+                android:layout_width="169dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="text"
+                android:textColorHint="#E2CA72"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="58dp"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_call" />
+
+            <EditText
+                android:id="@+id/edtCel"
+                android:layout_width="169dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Celular"
+                android:inputType="number"
+                android:textColorHint="#E2CA72"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:paddingTop="20sp"
+            android:paddingRight="20sp">
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:text="Método de Pago"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spMetPago"
+                android:layout_width="170dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="@drawable/style_borde"
+                android:gravity="center"
+                android:paddingLeft="10sp"
+                android:textAlignment="center"
+                android:theme="@style/SpinnerStyle"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/yape"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="74dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20sp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/logoyape" />
+
+            <EditText
+                android:id="@+id/edtNumYape"
+                android:layout_width="271dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:ems="10"
+                android:hint="Número de Yape"
+                android:inputType="number"
+                android:paddingLeft="10sp"
+                android:textColorHint="#E2CA72"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtMonPa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:hint="Con cuanto Pagara"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10sp"
+            android:textColorHint="#E2CA72"
+            android:visibility="gone"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20sp"
+            android:paddingTop="20sp"
+            android:paddingRight="20sp">
+
+            <Button
+                android:id="@+id/btnBoleta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10sp"
+                android:layout_weight="1"
+                android:backgroundTint="#178E8C8C"
+                android:onClick="onClick"
+                android:text="Boleta"
+                android:textColor="#000000" />
+
+
+            <Button
+                android:id="@+id/btnFactura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:backgroundTint="#178E8C8C"
+                android:onClick="fac"
+                android:text="Factura"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtComentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:hint="Recomendaciones"
+            android:inputType="text"
+            android:paddingLeft="20sp"
+            android:paddingTop="45sp"
+            android:textColorHint="@color/black" />
+
+        <CheckBox
+            android:id="@+id/chckReciProm"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="sans-serif-light"
+            android:text="Desea recibir promociones y descuentos exclusivos"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnFinCom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="20sp"
+            android:backgroundTint="#F65600"
+            android:text="Finalizar Compra" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="310dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Pagar Pedido"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnAtras"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/atras"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
